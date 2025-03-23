@@ -1,97 +1,77 @@
-# Getting Started with Create React App
+# RackOn - Inventory Management System for MSMEs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Introduction
+RackOn is a user-friendly inventory management platform designed specifically for Micro, Small, and Medium Enterprises (MSMEs). It streamlines inventory tracking, sales reporting, and alerts, helping businesses operate efficiently and make data-driven decisions.
 
-## Available Scripts
+## 🛠 Features
+- **User Authentication:** Secure login and sign-up with Firebase email/password and Google authentication.
+- **Inventory Management:** Add, update, delete, and view products with real-time data.
+- **Sales Reports:** Graphical representation of sales using intuitive charts.
+- **Smart Alerts:** Low-stock and expiration alerts via the web app and email notifications.
+- **AI-based Sales Prediction:** Predict sales trends using AI models to help businesses plan better.
+- **Role Management:** Future implementation to ensure role-based access control for different user levels.
 
-In the project directory, you can run:
+## 🏗️ Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** Firebase Firestore
+- **Authentication:** Firebase Authentication
+- **AI Model:** Python (Future Implementation)
 
-### `npm start`
+## 🚦 Installation
+Follow these steps to set up RackOn locally:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/yourusername/rackon.git
+    cd rackon
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Install Dependencies:**
+    ```bash
+    npm install
+    cd client
+    npm install
+    ```
 
-### `npm test`
+3. **Configure Firebase:**
+    - Create a Firebase project from the [Firebase Console](https://console.firebase.google.com/).
+    - Enable Firestore and Authentication (Email/Password and Google Sign-In).
+    - Copy your Firebase configuration and create a `.env` file in both the backend and frontend directories.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Run the Application:**
+    ```bash
+    cd client
+    npm start
+    ```
+    In another terminal window:
+    ```bash
+    cd server
+    node index.js
+    ```
 
-### `npm run build`
+## 🧑‍💻 Usage
+1. **Sign Up or Log In** using your email and password or Google account.
+2. **Add Products** by navigating to the product management page.
+3. **Monitor Sales** with visual reports and charts.
+4. **Receive Alerts** when stock levels are low or products are expiring soon.
+5. **Predict Sales** using AI-powered insights (coming soon).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🗂 Project Structure
+```bash
+rackon/
+├── client/      # Frontend (React)
+├── server/      # Backend (Node.js, Express)
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📧 Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to your branch (`git push origin feature-branch`).
+5. Create a Pull Request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+---
+_Developed with ❤️ by RackOn Team._
